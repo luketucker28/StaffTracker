@@ -32,10 +32,7 @@ namespace StaffTracker.Models
         [Required]
         public DateTime HireDate { get; set; }
         public DateTime? DischargeDate { get; set; }
-        public virtual ICollection<Individual> Individuals { get; set; }
-        public virtual ICollection<Staff> Staffs { get; set; }
-        //    public virtual ICollection<Goals> Goal { get; set; }
-        public virtual ICollection<Behavior> Behaviors { get; set; }
+        
 
     } 
 }

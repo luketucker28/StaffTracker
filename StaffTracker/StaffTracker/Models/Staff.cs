@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -29,7 +30,9 @@ namespace StaffTracker.Models
                 return LastName + ", " + FirstMidName;
             }
         }
+        
         public int IndividualID { get; set; }
+      
         [Required]
         public DateTime HireDate { get; set; }
         public DateTime? EmploymentDischarge { get; set; }
