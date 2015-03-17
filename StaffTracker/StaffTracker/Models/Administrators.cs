@@ -32,7 +32,19 @@ namespace StaffTracker.Models
         [Required]
         public DateTime HireDate { get; set; }
         public DateTime? DischargeDate { get; set; }
-        
 
+        public Administrator()
+        {
+
+        }
+        public Administrator(string birthday, string lastname, string firstname, DateTime hired, DateTime? discharge)
+        {
+            this.BirthDay = birthday;
+            this.LastName = lastname;
+            this.FirstMidName = firstname;
+            this.HireDate = hired;
+            this.DischargeDate = discharge;
+        }
+        
     } 
 }

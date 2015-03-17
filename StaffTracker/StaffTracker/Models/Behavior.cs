@@ -27,5 +27,23 @@ namespace StaffTracker.Models
         public string Resolution { get; set; }
         public virtual Individual Individual { get; set; }
         public virtual Staff Staff { get; set; }
+
+        public Behavior()
+        {
+
+        }
+            public Behavior( int indI, int staffI, DateTime date, string time, string types, string before, int durat, int intens, string res)
+        {
+            this.IndividualID = indI;
+            this.StaffID = staffI;
+            this.Date = date;
+            this.Time = time;
+            this.Type = types;
+            this.Antecedant = before;
+            this.Duration = durat;
+            this.Intensity = intens;
+            this.Resolution = res;
+
+        }
     }
 }

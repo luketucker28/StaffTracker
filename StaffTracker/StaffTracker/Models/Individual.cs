@@ -39,6 +39,18 @@ namespace StaffTracker.Models
         public virtual ICollection<Staff> Staffs { get; set; }
         public virtual ICollection<Behavior> Behaviors { get; set; }
 
+        public Individual()
+        {
 
+        }
+        public Individual(string birthday , string lastname, string firstmidname, DateTime enterdate, string description, string picture, DateTime? discharge)  {
+            this.BirthDay = birthday;
+            this.LastName = lastname;
+            this.FirstMidName = firstmidname;
+            this.EnterDate = enterdate;
+            this.Description = description;
+            this.Picture = picture;
+            this.DischargeDate = discharge;
+        }
     }
 }
